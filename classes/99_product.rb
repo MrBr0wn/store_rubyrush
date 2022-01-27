@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# Parent class for the store
 class Product
   attr_accessor :price, :count
 

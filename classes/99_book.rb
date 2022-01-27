@@ -1,3 +1,4 @@
-class Book < Product
+# frozen_string_literal: true
 
+class Book < Product
 end
