@@ -20,8 +20,12 @@ class Product
     }
     str = ''
     @params.each do |k, v|
-      str += keys[k] + ': ' + v.to_s + ', '
+      str += "#{keys[k]}: #{v}, "
     end
     puts str.strip.chop
+  end
+
+  def update(params)
+    params.map { |key, value| @params[key] = value }
   end
 end

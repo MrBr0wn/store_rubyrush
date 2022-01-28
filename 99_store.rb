@@ -44,7 +44,15 @@ puts "\n"
 annihilation.to_s
 puts "\n"
 
+annihilation.update({ title: 'test' })
+annihilation.to_s
+puts "\n"
+
 fate.to_s
 puts "\n"
 
+rich_dad.to_s
+puts "\n"
+
+rich_dad.update({ genre: 'dramma', count: 1 })
 rich_dad.to_s
