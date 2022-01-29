@@ -4,6 +4,7 @@ require_relative 'classes/99_product'
 require_relative 'classes/99_book'
 require_relative 'classes/99_movie'
 
+# Creating objects
 matrix = Movie.new(
   title: '"Matrix"',
   year_release: '1993',
@@ -38,6 +39,7 @@ rich_dad = Book.new(
   count: 100
 )
 
+# Printing objects
 matrix.to_s
 puts "\n"
 
@@ -54,5 +56,11 @@ puts "\n"
 rich_dad.to_s
 puts "\n"
 
+# Updating object
 rich_dad.update({ genre: 'dramma', count: 1 })
 rich_dad.to_s
+
+# Creating object with static method from_file
+movie = Movie.from_file('./data/movies/01.txt')
+# Demonstration error
+movie = Product.from_file('./data/movies/01.txt')

@@ -8,6 +8,7 @@ class Product
     @params = params
   end
 
+  # Method print content of the instance
   def to_s
     keys = {
       title: 'Title',
@@ -25,7 +26,16 @@ class Product
     puts str.strip.chop
   end
 
+  # Method update parameters instance
   def update(params)
     params.map { |key, value| @params[key] = value }
+  end
+
+  # Method of Product class
+  # raise NotImplementedError if instance trying create
+  class << self
+    def from_file(path)
+      raise NotImplementedError
+    end
   end
 end
