@@ -3,6 +3,7 @@
 require_relative 'classes/99_product'
 require_relative 'classes/99_book'
 require_relative 'classes/99_movie'
+require_relative 'classes/99_product_collection'
 
 # Creating objects
 matrix = Movie.new(
@@ -63,4 +64,7 @@ rich_dad.to_s
 # Creating object with static method from_file
 movie = Movie.from_file('./data/movies/01.txt')
 # Demonstration error
-movie = Product.from_file('./data/movies/01.txt')
+# movie = Product.from_file('./data/movies/01.txt')
+
+# Printing data directiory
+ProductCollection.from_dir
