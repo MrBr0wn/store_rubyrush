@@ -4,24 +4,27 @@
 class Product
   attr_accessor :params
 
+  # Const for products parameters
+  # Freeze this for deny change
+  PRODUCT_PARAMS = {
+    title: 'Title',
+    year_release: 'Year of release',
+    director: 'Director',
+    author: 'Author',
+    genre: 'Genre',
+    price: 'Price',
+    count: 'Count'
+  }.freeze
+
   def initialize(params)
     @params = params
   end
 
   # Method print content of the instance
-  def to_s
-    keys = {
-      title: 'Title',
-      year_release: 'Year of release',
-      director: 'Director',
-      author: 'Author',
-      genre: 'Genre',
-      price: 'Price',
-      count: 'Count'
-    }
+  def to_s(*)
     str = ''
     @params.each do |k, v|
-      str += "#{keys[k]}: #{v}, "
+      str += "#{PRODUCT_PARAMS[k]}: #{v}, "
     end
     puts str.strip.chop
   end

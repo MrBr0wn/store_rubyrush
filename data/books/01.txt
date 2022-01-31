@@ -1,5 +1,5 @@
-Название книги
-Жанр
-Фамилия и имя автора
-Цена
-Остаток
+Book title1
+Book genre1
+Author1
+Price1
+Count1

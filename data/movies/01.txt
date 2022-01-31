@@ -1,5 +1,5 @@
-Название фильма
-Фамилия и имя режиссера
-Год выхода
-Цена
-Остаток
+Movie title1
+Director1
+Year release1
+Price1
+Count1
