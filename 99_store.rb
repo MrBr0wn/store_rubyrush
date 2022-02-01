@@ -5,13 +5,16 @@ require_relative 'classes/99_book'
 require_relative 'classes/99_movie'
 require_relative 'classes/99_product_collection'
 
-# Creating collection from directory
-collection = ProductCollection.from_dir('data')
-collection.sort!(by: :title, order: :asc)
+# Creating object with static method read_from_xml
+Product.read_from_xml('products.xml')
 
-collection.to_a.each do |product|
-  puts product.params.to_s
-end
+# Creating collection from directory
+# collection = ProductCollection.from_dir('data')
+# collection.sort!(by: :title, order: :asc)
+#
+# collection.to_a.each do |product|
+#   puts product.params.to_s
+# end
 
 # Creating objects
 # matrix = Movie.new(
