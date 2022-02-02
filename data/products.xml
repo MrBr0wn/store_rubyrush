@@ -1,27 +1,30 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
+<?xml version='1.0' encoding='UTF-8'?> 
 <products>
-  <product price="1000" count="50">
-    <book title="Приключения Тома Сойера" author="Марк Твен"></book>
+  <product price='1000' count='50'>
+    <book title='Приключения Тома Сойера' author='Марк Твен'/>
   </product>
-
-  <product price="500" count="25">
-    <book title="Ходячий замок" author="Диана Уинн Джонс"></book>
+  <product price='500' count='25'>
+    <book title='Ходячий замок' author='Диана Уинн Джонс'/>
   </product>
-
-  <product price="1500" count="150">
-    <book title="Игра Эндера" author="Орсон Скотт Кард"></book>
+  <product price='1500' count='150'>
+    <book title='Игра Эндера' author='Орсон Скотт Кард'/>
   </product>
-
-  <product price="299" count="8150">
-    <movie title="Шрэк 2 (DVD)" director="DreamWorks Animation" year_release="2004"></movie>
+  <product price='299' count='8150'>
+    <movie title='Шрэк 2 (DVD)' director='DreamWorks Animation' year_release='2004'/>
   </product>
-
-  <product price="370" count="140">
-    <movie title="Побег из Претории" director="Фрэнсис Аннан" year_release="2020"></movie>
+  <product price='370' count='140'>
+    <movie title='Побег из Претории' director='Фрэнсис Аннан' year_release='2020'/>
   </product>
-
-  <product price="298" count="78">
-    <movie title="Непокоренный" director="Клинт Иствуд" year_release="2009"></movie>
+  <product price='298' count='78'>
+    <movie title='Непокоренный' director='Клинт Иствуд' year_release='2009'/>
+  </product>
+  <product price='250' count='30'>
+    <book title='test' author='tets' genre='testtst' price='250' count='30'/>
+  </product>
+  <product price='110' count='1'>
+    <book title='sfsdf' author='sdgsdgsd' genre='asdasd'/>
+  </product>
+  <product price='1000' count='50'>
+    <movie title='film' year_release='2020' director='WB'/>
   </product>
 </products>
